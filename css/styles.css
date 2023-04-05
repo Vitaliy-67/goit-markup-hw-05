@@ -83,7 +83,7 @@
         width: 100%;
         height: 4px;
         left: 0px;
-        top: 68px;
+        top: 45px;
         background: #404BBF;
         border-radius: 2px;
     }
@@ -137,15 +137,15 @@
     .header-item {
         display: block;
         position: relative;
-        padding: 24px 0 0;
+        padding: 0;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.50em;
         letter-spacing: 0.02em;
         color:var(--header-item-color);
-        transition-property: color; 
-        transition-duration: var(--transition-duration) ;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: color ,
+        duration var(--transition-duration) ,
+        timing-function cubic-bezier(0.4, 0, 0.2, 1);
     }
     
     .header-item:is(:hover, :focus)
@@ -565,7 +565,7 @@
         padding-left: 32px;
         padding-right: 32px;
         padding-top: 40px;
-        transform: translateY(100%);
+        transform: translateY(101%);
         transition: transform var(--transition-duration);
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -593,8 +593,10 @@
     .backdrop {
         position: fixed;
         top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
+        opacity: 1;
         background-color:rgba(46, 47, 66, 0.4);
         transition: opacity var(--transition-duration) 
         cubic-bezier(0.4, 0, 0.2, 1), 
@@ -607,7 +609,6 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        padding: 24px;
         transform: translate(-50%, -50%) scale(1);
         transition: transform var(--transition-duration)
         cubic-bezier(0.4, 0, 0.2, 1);
@@ -623,7 +624,8 @@
     }
     .modal-close {
         display: flex;
-        margin-left: auto;
+        position: absolute;
+        right: 0;
         justify-content: center;
         align-items: center;
         width: 24px;
