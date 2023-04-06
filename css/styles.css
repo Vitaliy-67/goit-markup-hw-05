@@ -143,9 +143,7 @@
         line-height: 1.50em;
         letter-spacing: 0.02em;
         color:var(--header-item-color);
-        transition-property: color ,
-        duration var(--transition-duration) ,
-        timing-function cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
     }
     
     .header-item:is(:hover, :focus)
@@ -168,9 +166,7 @@
         line-height: 1.50em;
         letter-spacing: 0.02em;
         color:var(--contacs-color);
-        transition-property: color; 
-        transition-duration: var(--transition-duration) ;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
     }
     
     .contacts:is(:hover, :focus) {
